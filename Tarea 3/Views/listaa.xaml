@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea_3.Views.listaa">
+    <ContentPage.Content>
+
+
+        <StackLayout>
+            <CollectionView x:Name="Listabase"
+                             Margin="20"
+                             SelectionMode="Single"
+                             SelectionChanged="Listabase_selectionChanged">
+
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical"
+                                          ItemSpacing="10"/>
+
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="{Binding id}"/>
+                            <Label Text="{Binding nombre}"/>
+                            <Label Text="{Binding apellido}"/>
+                            <Label Text="{Binding edad}"/>
+                            <Label Text="{Binding correo}"/>
+                            <Label Text="{Binding direccion}"/>
+
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <StackLayout>
+</ContentPage>

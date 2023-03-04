@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea_3.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+
+        </Frame>
+        <Grid Grid.Row="1" Margin="0,0,0,0">
+            <Entry Placeholder="Nombres" x:Name ="txtnombre"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"></Entry>
+        </Grid>
+
+        <Grid Grid.Row="2" Margin="0,0,0,0">
+            <Entry Placeholder="Apellidos" x:Name="txtapellido"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"></Entry>
+        </Grid>
+
+        <Grid Grid.Row="3" Margin="0,0,0,0">
+            <Entry Placeholder="Edad" x:Name="txtedad"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"></Entry>
+        </Grid>
+
+        <Grid Grid.Row="4" Margin="0,0,0,0">
+            <Entry Placeholder="Correo Electronico" x:Name="txtcorreo"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"></Entry>
+        </Grid>
+
+        <Grid Grid.Row="5" Margin="0,0,0,0">
+            <Entry Placeholder="Direccion" x:Name="txtdirecion"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"></Entry>
+        </Grid>
+
+        <Grid Grid.Row="6" Margin="0,0,0,0">
+            <StackLayout>
+                <Button Text="Salvar" x:Name="btnsalvar"
+                        TextColor="Black"
+                        BackgroundColor="#C78A14"
+                        BorderWidth="3"
+                        CornerRadius="4"
+                        Clicked="btnsalvar_Clicked"></Button>
+                
+
+            </StackLayout>
+        </Grid>
+
+
+    </StackLayout>
+
+</ContentPage>

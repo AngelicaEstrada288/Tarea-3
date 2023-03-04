@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea_3.Resultado">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nombre"/>
+            <Label Text="{Binding nombre}"
+                 />
+
+            <Label Text="Apellido"/>
+            <Label Text="{Binding apellido}"
+                 />
+
+            <Label Text="Edad"/>
+            <Label Text="{Binding edad}"
+                 />
+
+            <Label Text="Correo electronico"/>
+            <Label Text="{Binding correo}"
+                 />
+
+            <Label Text="Direccion"/>
+            <Label Text="{Binding direccion}"
+                 />
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
